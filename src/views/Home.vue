@@ -22,7 +22,7 @@
             .content-wrapper.px-lg-4.pt-lg-4.px-xxl-5.py-xxl-5.text-start
               p.home-main-title UNIDAD {{ `${globalData.numeroUnidad}` }}
               h1.home-title.mb-4 {{ globalData.tituloUnidad }}
-              p.descripcion.mb-4 La unidad presenta los fundamentos de la Programación Orientada a Objetos (POO), explicando conceptos clave como clases, objetos, encapsulación, abstracción e interacción entre objetos. Se destacan los beneficios de modularidad, reutilización de código y simplificación del desarrollo de software. Se estudian mecanismos como constructores, métodos get/set, diagramas UML, interfaces, asociaciones, acoplamiento, cohesión, composición y agregación. La unidad ofrece ejemplos prácticos y recursos audiovisuales para apoyar el aprendizaje. Dominar estos conceptos es esencial para diseñar sistemas robustos, escalables y mantenibles en ingeniería de software.
+              p.descripcion.mb-4 La Unidad 3 aborda el manejo de excepciones y eventos en programación orientada a objetos, esenciales para construir aplicaciones robustas y mantenibles. Se estudian tipos de excepciones, jerarquía de clases, palabras clave como try, catch, y la creación de excepciones personalizadas. También se exploran eventos en interfaces gráficas, listeners, y el paradigma orientado a eventos. Finalmente, se detallan técnicas de depuración, uso de IDEs, registro de errores (logging) y pruebas unitarias. Esta unidad integra teoría, práctica y herramientas actuales para un desarrollo eficaz y profesional del software.
               .button-container.mt-auto
                 router-link.btn-iniciar.w-100.w-md-auto(:to="{ name: 'introduccion' }")
                   .iniciar-btn-container.w-100.w-md-auto

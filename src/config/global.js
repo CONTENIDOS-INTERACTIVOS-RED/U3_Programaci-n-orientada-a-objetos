@@ -1,7 +1,7 @@
 export default {
   global: {
-    numeroUnidad: '1',
-    tituloUnidad: 'Fundamentos de programación orientada a objetos',
+    numeroUnidad: '3',
+    tituloUnidad: 'Manejo de excepciones y eventos',
   },
   menuPrincipal: {
     menu: [
@@ -15,22 +15,24 @@ export default {
         nombreRuta: 'tema1',
         icono: 'far fa-file-alt',
         numero: '1',
-        titulo: 'Fundamentos de programación orientada a objetos',
+        titulo: 'Manejo de excepciones y eventos',
         desarrolloContenidos: true,
         subMenu: [
           {
             icono: 'far fa-file-alt',
             numero: '1.1',
-            titulo: 'Historia de los lenguajes de programación',
+            titulo: 'Tipos de excepciones',
             hash: 't_1_1',
           },
-          {
-            icono: 'far fa-file-alt',
-            numero: '1.2',
-            titulo: 'Encapsulación y abstracción	',
-            hash: 't_1_2',
-          },
         ],
+      },
+      {
+        nombreRuta: 'tema2',
+        icono: 'far fa-file-alt',
+        numero: '2',
+        titulo: 'Manejo de eventos en GUI',
+        desarrolloContenidos: true,
+        subMenu: [],
       },
       {
         nombreRuta: 'sintesis',
@@ -98,130 +100,161 @@ export default {
         'Vélez Serrano, J. (2011). Diseñar y programar, todo es empezar: una introducción a la Programación Orientada a Objetos usando UML y Java: ( ed.). Dykinson.',
       link: 'https://elibro.net/es/ereader/tecnologicadeloriente/63076?page=1',
     },
+    {
+      referencia:
+        'Cruz, R. (2020, 28 de octubre). Manejo de Excepciones. [Vídeo]. YouTube.',
+      link: 'https://youtu.be/Wnn6RZ4opfA',
+    },
+    {
+      referencia:
+        'Castillo, L. (2020, 16 de agosto). Manejo de excepciones en Java (try-catch). [Vídeo]. YouTube.',
+      link: 'https://youtu.be/7XeQBBcaFZQ',
+    },
+    {
+      referencia:
+        'Lopez, M. (2020, 20 de noviembre). GUI + BD (16 : Validaciones De Campos "Importante De Ver!!"). [Vídeo]. YouTube.',
+      link: 'https://youtu.be/ArVVh9_h26U',
+    },
+    {
+      referencia:
+        'Hernández, J. (2019, 10 de abril). Ejercicio para agregar un Listener a un JButton. [Vídeo]. YouTube.',
+      link: 'https://youtu.be/YIo-J1O42ec',
+    },
+    {
+      referencia:
+        'Bueno. D. (2021, 19 de marzo). introducción a la Depuración en Java (usando Eclipse). [Vídeo]. YouTube.',
+      link: 'https://youtu.be/5FTFSQn-I7M',
+    },
+    {
+      referencia:
+        'Software Guru. (2014, 29 de octubre). ¿Cómo convertirse en un tester de verdad?. [Vídeo].',
+      link: 'https://youtu.be/UMMMWaP7ejU',
+    },
   ],
   glosario: [
     {
-      termino: 'Abstracción',
+      termino: 'ActionListener',
       significado:
-        'Proceso de identificar los aspectos esenciales de un sistema y representarlos en un modelo simplificado, ignorando los detalles no relevantes.',
+        'Es una interfaz que define el método actionPerformed(), el cual es invocado cuando ocurre una acción, como hacer clic en un botón.',
     },
     {
-      termino: 'Acoplamiento',
+      termino: 'Bloque catch',
       significado:
-        'Grado de interdependencia entre las clases o módulos de un sistema.',
+        'Es una sección de código que maneja una excepción específica lanzada en el bloque try correspondiente.',
     },
     {
-      termino: 'Agregación',
+      termino: 'Bloque finally',
       significado:
-        'Tipo de asociación en la que un objeto contiene referencias a otros objetos, pero estos pueden existir independientemente.',
+        'Es una sección opcional de código que se ejecuta siempre, independientemente de si se lanzó una excepción o no.',
     },
     {
-      termino: 'Asociación',
+      termino: 'Bloque try',
       significado:
-        'Relación entre clases que describe cómo los objetos de una clase se conectan o interactúan con los objetos de otra clase.',
+        'Es una sección de código que puede lanzar una excepción. Si se lanza una excepción, la ejecución se transfiere inmediatamente al bloque catch correspondiente.',
     },
     {
-      termino: 'Atributo',
+      termino: 'Clase Exception',
       significado:
-        'Variable que representa una propiedad o característica de una clase.',
+        'Es la superclase de todas las excepciones. Es una subclase directa de Throwable.',
     },
     {
-      termino: 'Clase',
+      termino: 'Clase RuntimeException',
       significado:
-        'Plantilla o blueprint que define las propiedades y comportamientos comunes de un conjunto de objetos.',
+        'Es una subclase de Exception que representa excepciones que pueden ocurrir durante el funcionamiento normal del programa Java.',
     },
     {
-      termino: 'Clase abstracta',
+      termino: 'Clase Throwable',
       significado:
-        'Clase que no puede ser instanciada directamente y sirve como base para otras clases derivadas.',
+        'Es la superclase de todas las excepciones y errores en Java.',
     },
     {
-      termino: 'Clase concreta',
+      termino: 'Depuración (debugging)',
       significado:
-        'Clase que puede ser instanciada para crear objetos específicos.',
+        'Es el proceso de encontrar y corregir errores (bugs) en el código.',
     },
     {
-      termino: 'Cohesión',
+      termino: 'Diseño orientado a eventos (Event-Driven Programming)',
       significado:
-        'Grado en que los elementos de una clase están relacionados y trabajan juntos para lograr un único propósito.',
+        'Es un paradigma de programación donde el flujo del programa está determinado por eventos.',
     },
     {
-      termino: 'Composición',
+      termino: 'Error',
       significado:
-        'Tipo de asociación en la que un objeto contiene otros objetos y es responsable de su ciclo de vida.',
+        'Es una condición grave que la aplicación no debería intentar manejar, como un error de memoria.',
     },
     {
-      termino: 'Constructor',
+      termino: 'Excepciones no verificadas (Unchecked Exceptions)',
       significado:
-        'Método especial utilizado para inicializar los atributos de un objeto al momento de su creación.',
+        'Son excepciones que no necesitan ser declaradas en la firma de un método o manejadas explícitamente. Típicamente heredan de RuntimeException.',
     },
     {
-      termino: 'Diagrama de clases UML',
+      termino: 'Excepciones personalizadas',
       significado:
-        'Representación visual de la estructura de un sistema, mostrando las clases, sus atributos, métodos y las relaciones entre ellas.',
+        'Son clases de excepción definidas por el desarrollador para representar condiciones de error específicas de la aplicación.',
     },
     {
-      termino: 'Encapsulación',
+      termino: 'Excepciones verificadas (Checked Exceptions)',
       significado:
-        'Principio que consiste en ocultar los detalles internos de una clase y exponer solo una interfaz pública para interactuar con ella.',
+        'Son excepciones que deben ser manejadas o declaradas en la firma del método.',
     },
     {
-      termino: 'Herencia',
+      termino: 'GUI (Graphical User Interface)',
       significado:
-        'Mecanismo que permite a una clase (subclase) heredar las propiedades y comportamientos de otra clase (superclase).',
+        'Es una interfaz de usuario que permite a los usuarios interactuar con los programas a través de elementos gráficos como botones e íconos.',
     },
     {
-      termino: 'Instanciación',
-      significado: 'Proceso de crear un objeto a partir de una clase.',
-    },
-    {
-      termino: 'Interfaz',
+      termino: 'IDE (Integrated Development Environment)',
       significado:
-        'Contrato que define un conjunto de métodos que una clase debe implementar, sin especificar cómo deben ser implementados.',
+        'Es una aplicación de software que proporciona herramientas integrales para facilitarle a los programadores el desarrollo de software.',
     },
     {
-      termino: 'Mensaje',
+      termino: 'Interfaz de escucha (Listener Interface)',
       significado:
-        'Solicitud enviada a un objeto para que ejecute uno de sus métodos.',
+        'Define los métodos que deben implementarse para manejar eventos específicos.',
     },
     {
-      termino: 'Método',
+      termino: 'KeyListener',
       significado:
-        'Función o procedimiento que define el comportamiento de una clase.',
+        'Es una interfaz que define métodos que son invocados cuando ocurre un evento de teclado, como presionar o soltar una tecla.',
     },
     {
-      termino: 'Modificador de acceso',
+      termino: 'Listeners (oyentes)',
       significado:
-        'Palabra clave (public, private, protected) que determina la visibilidad y accesibilidad de los miembros de una clase.',
+        'Son objetos que implementan una interfaz de escucha y son notificados cuando ocurre un evento.',
     },
     {
-      termino: 'Objeto',
+      termino: 'Logging (registro)',
       significado:
-        'Instancia específica de una clase, que tiene sus propios valores para los atributos definidos en la clase.',
+        'Es el acto de grabar eventos que ocurren durante la ejecución de un programa, generalmente con propósitos de debugging o auditoría.',
     },
     {
-      termino: 'Parámetro',
+      termino: 'MouseListener',
       significado:
-        'Variable que recibe un valor al momento de llamar a un método.',
+        'Es una interfaz que define métodos que son invocados cuando ocurre un evento del mouse, como un clic o un movimiento del mouse.',
     },
     {
-      termino: 'POO (Programación Orientada a Objetos)',
+      termino: 'Palabra clave throw',
+      significado: 'Se usa para lanzar explícitamente una excepción.',
+    },
+    {
+      termino: 'Palabra clave throws',
       significado:
-        'Paradigma de programación basado en el concepto de objetos, que encapsulan datos y comportamiento.',
+        'Se usa en la firma del método para declarar las excepciones que un método podría lanzar.',
     },
     {
-      termino: 'Propiedad',
+      termino: 'Pruebas unitarias',
       significado:
-        'Atributo de una clase que tiene métodos get y set asociados para acceder y modificar su valor de manera controlada.',
+        'Son un método de prueba de software mediante el cual se prueban unidades individuales de código fuente para determinar si son aptas para su uso.',
     },
     {
-      termino: 'Retorno de método',
-      significado: 'Valor que un método devuelve al finalizar su ejecución.',
-    },
-    {
-      termino: 'UML (Lenguaje Unificado de Modelado)',
+      termino: 'Punto de ruptura (breakpoint)',
       significado:
-        'Lenguaje estándar para modelar y visualizar el diseño de sistemas de software orientados a objetos.',
+        'Es un punto marcado en el código donde la ejecución se detendrá para permitir la inspección de los valores de las variables.',
+    },
+    {
+      termino: 'Traza (trace)',
+      significado:
+        'Es una herramienta de depuración que registra la secuencia de instrucciones ejecutadas durante la ejecución de un programa.',
     },
   ],
 }
