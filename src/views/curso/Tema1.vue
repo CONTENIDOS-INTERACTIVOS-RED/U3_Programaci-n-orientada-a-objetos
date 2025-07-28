@@ -182,9 +182,9 @@
       .col-12.col-xl-7
         p.mb-4 A continuación, se presenta un recurso educativo que aborda la creación de excepciones personalizadas en programación orientada a objetos, explicando su propósito, implementación y beneficios para un manejo de errores más claro y específico: 
         TarjetaAudio.color-secundario.bg-white.mb-3(
-          texto='Texto descriptivo del audio'
+          texto='Programación orientada a objetos'
           tiempo
-          :audio="require('../../assets/componentes/audios/audio-ej.mp3')"
+          :audio="require('../../assets/componentes/audios/Programación_orientada_a_objetos.mp3')"
           @audio-hover='mostrarIndicadorTarjetaAudio = false'
         )
       .col-5.d-none.d-xl-block
